@@ -9,8 +9,7 @@ Creating Player class with thier respective subclasses and to create a TeamScore
 public class CricketPlayers
 {
 
-
-  public static void m1()
+  public static void main(String[] ar)
 {
 
 Player players1[] = new Player[11];
@@ -267,3 +266,17 @@ System.out.print(" He keeps the wickets and has " + numberOfCatches + " catches 
          }
       
 }
+
+
+
+-----
+
+public class TestCricket {  
+  
+    @Test  
+    public void test() {  
+   String[] arguments = new String[] { "-i", "CONSOLE" };
+CricketPlayers.main(arguments);
+    }  
+  
+}  
