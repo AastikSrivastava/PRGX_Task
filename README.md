@@ -276,8 +276,8 @@ public class TestCricket {
   
     @Test  
     public void test() {  
-   String[] arguments = new String[] { "-i", "CONSOLE" };
-CricketPlayers.main(arguments);
+    String[] arguments = new String[] { "-i", "CONSOLE" };
+    CricketPlayers.main(arguments);
     }  
   
 }  
