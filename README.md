@@ -5,6 +5,7 @@ Cricket match
 Creating Player class with thier respective subclasses and to create a TeamScore class to calulcate win / lose team score. 
 */
 
+----
 
 public class CricketPlayers
 {
@@ -93,7 +94,7 @@ boolean check = TeamScore.createWinner(team1Score ,  team2Score);
 }
 
 
-
+--------
 
 
 abstract class Player
@@ -125,7 +126,7 @@ System.out.print(name + " scored " + runsScored + " runs.");
 
 
 
-
+--------
 
 
 class Batsmen extends Player
@@ -164,7 +165,7 @@ System.out.print(" He is a good batsmen and made " + numberOfCenturies + " centu
 
 
 
-
+--------
 
 
 class Bowler extends Player
@@ -204,7 +205,7 @@ System.out.print(" He is a good bowler and has taken " + numberOfWickets + " wic
 }
 
 
-
+---------
 
 
 class WicketKeeper extends Player
@@ -246,7 +247,7 @@ System.out.print(" He keeps the wickets and has " + numberOfCatches + " catches 
 }
 
 
-
+--------
 
 
  class TeamScore {
