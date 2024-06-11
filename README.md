@@ -8,8 +8,11 @@ Creating Player class with thier respective subclasses and to create a TeamScore
 
 public class CricketPlayers
 {
-public static void m1()
+
+
+  public static void m1()
 {
+
 Player players1[] = new Player[11];
 
 players1[0] = new Batsmen("Sachin", 18 , 0 , 0);
@@ -35,13 +38,14 @@ players2[4] = new Batsmen("Rahul", 175, 1, 2, );
 players2[5] = new Batsmen("Gmb", 34, 0, 0);
 players2[6] = new Batsmen("Panikae", 25, 0 , 0 );
 players2[7] = new Bowler("Harbhajan", 18 , 2, 4);
-
 players2[8] = new Bowler("Zaheer", 19 , 1, 4);
 players2[9] = new Bowler("Umesh", 10 , 0, 0);
 players2[10] = new Bowler("Aswin", 3 , 3, 4);
 
 int team1Score =0;
 int team2Score =0;
+
+
 
 // printing each player of team 1 score cards
 for(Player player : players1)
@@ -52,6 +56,8 @@ System.out.println();
 System.out.println("---------------------");
 
 }
+
+
 // printing each player of team 2 score cards
 for(Player player : players2)
 {
@@ -61,6 +67,9 @@ System.out.println();
 System.out.println("---------------------");
 
 }
+
+
+
 
 // deciding winner of match
 boolean check = TeamScore.createWinner(team1Score ,  team2Score);
@@ -84,8 +93,13 @@ boolean check = TeamScore.createWinner(team1Score ,  team2Score);
 }
 }
 
+
+
+
+
 abstract class Player
 {
+
 String name;
 int runsScored;
 
@@ -110,8 +124,14 @@ System.out.print(name + " scored " + runsScored + " runs.");
 }
 }
 
+
+
+
+
+
 class Batsmen extends Player
 {
+
 int numberOfCenturies;
 int numberOfHalfCenturies;
 // Assume have added Getter & setter
@@ -143,12 +163,19 @@ System.out.print(" He is a good batsmen and made " + numberOfCenturies + " centu
 }
 
 
+
+
+
+
+
 class Bowler extends Player
 {
 int numberOfWickets;
 int numberOf5WicketInnings;
 
 // Assume have added Getter & setter
+
+
 
 Bowler(String name, int runsScored, int numberOfWickets, int numberOf5WicketInnings)
 {
@@ -177,7 +204,12 @@ System.out.print(" He is a good bowler and has taken " + numberOfWickets + " wic
 
 }
 
+
+
+
+
 class WicketKeeper extends Player
+
 {
 int numberOfCatches;
 int numberOfStumpings;
@@ -203,12 +235,19 @@ void makeAppeals()
 {
 }
 
+
+
 void print()
 {
 super.print();
 System.out.print(" He keeps the wickets and has " + numberOfCatches + " catches and " + numberOfStumpings + " stumpings in his account.");
 }
+
+
 }
+
+
+
 
 
  class TeamScore {
